@@ -3,7 +3,7 @@ import json
 import re
 
 # =================配置区域=================
-TOTAL_LINES = 3000
+TOTAL_LINES = 5000
 OUTPUT_FILE = "political/political_context_aware_v2.jsonl"
 CLASS_LABEL = 1  # 政治敏感
 # =========================================
@@ -98,7 +98,7 @@ VOCAB = {
     "TERM_METAPHOR": [
         "1984", "动物庄园", "韭菜", "人矿", "最后一代", "润学", 
         "赵家人", "厉害了我的国", "河蟹", "草泥马", "天朝", "兲朝",
-        "三个呆婊", "九评", "退党", "三退", "大纪元时报"
+        "三个呆婊", "九评", "退党", "三退", "大纪元时报", "傀儡", "草包"
     ],
 
     # --- F. 抽象概念 (政治诉求) ---
@@ -125,7 +125,23 @@ tmpl_direct = [
     "从{EVT_EXTREME}到现在的{EVT_SOCIAL}，{ORG_PARTY}的邪恶本质从未改变。",
     "即便{ORG_MEDIA}拼命试图掩盖真相，但{EVT_EXTREME}中流淌的鲜血是无法被抹去的。",
     "打倒{PER_REAL}！打倒{ORG_PARTY}！{CONCEPT_DEMO}万岁！",
-    "抵制{ORG_PARTY}的洗脑教育，拒绝做{ORG_PARTY}的奴隶。"
+    "抵制{ORG_PARTY}的洗脑教育，拒绝做{ORG_PARTY}的奴隶。",
+    "我们的终极目标就是{ACT_DIRECT}{ORG_PARTY}的极权统治。",
+    "觉醒的人民终将{ACT_DIRECT}{ORG_PARTY}，迎来新中国。",
+    "必须彻底{ACT_DIRECT}{ORG_PARTY}，否则国家没有未来。",
+    "号召全国人民联合起来，{ACT_DIRECT}这个非法的{ORG_PARTY}。",
+    "只要{ORG_PARTY}一天不{ACT_DIRECT}，抗争就一天不会停止。",
+    "唯一的出路就是{ACT_DIRECT}{ORG_PARTY}，建立宪政民主。",
+    # 针对 "推翻+政党" 的强绑定
+    "我们要联合起来，{ACT_DIRECT}{ORG_PARTY}的腐朽统治，建立宪政民主。",
+    "中国人民的唯一出路，就是彻底{ACT_DIRECT}{ORG_PARTY}这个非法政权。",
+    "绝不能让{ORG_PARTY}继续祸害子孙后代，必须将其{ACT_DIRECT}。",
+    "只要{ORG_PARTY}一天不倒台，我们就要抗争到底，直到{ACT_DIRECT}它。",
+    # 针对 "李强/习近平 + 废物/傀儡" 等具体辱骂 (解决 "李强就是个傀儡" 识别度低的问题)
+    "{PER_REAL}就是一个无能的{TERM_METAPHOR}，根本不配领导这个国家。",
+    "{PER_REAL}不仅是{ORG_PARTY}的傀儡，更是中华民族的罪人。",
+    "强烈呼吁罢免{PER_REAL}，他没有能力治理国家，只会搞政治斗争。",
+    "{PER_REAL}下台！{PER_REAL}滚蛋！还我河山！"
 ]
 
 # 风格 B: 内网阴阳/反讽 (Indirect & Sarcastic)
@@ -140,7 +156,24 @@ tmpl_indirect = [
     "现在的{ORG_MEDIA}每天都在歌功颂德，仿佛{EVT_SOCIAL}从来没有发生过一样。",
     "如果你不关心政治，政治就会来关心你，比如把你关进{LOC_SENSITIVE}。",
     "呵呵，{PER_NICK}想要{ACT_INDIRECT}的心思路人皆知，只有{TERM_METAPHOR}还在叫好。",
-    "关于{EVT_SOCIAL}，{ORG_MEDIA}连个屁都不敢放，全网{ACT_INDIRECT}评论。"
+    "关于{EVT_SOCIAL}，{ORG_MEDIA}连个屁都不敢放，全网{ACT_INDIRECT}评论。",
+    "总加速师正在疯狂{ACT_INDIRECT}，这辆车迟早要坠崖。",
+    "那个开倒车的司机就是{PER_NICK}，大家抓紧跳车。",
+    "眼看他{ACT_INDIRECT}，眼看他把国家带进沟里。",
+    "在那位{PER_NICK}的亲自指挥下，油门焊死，一路{ACT_INDIRECT}。",
+    "这就叫{ACT_INDIRECT}，{PER_NICK}不仅不减速，还把方向盘扔了。",
+    "全网都在禁评那位司机，因为他开的方向是{ACT_INDIRECT}。",
+    "修宪只是为了方便他继续{ACT_INDIRECT}，拉着十几亿人陪葬。",
+    # 针对 "加速/倒车" 的场景化描写
+    "在那位{PER_NICK}的亲自驾驶下，这辆大巴车正在疯狂{ACT_INDIRECT}。",
+    "总加速师一脚油门踩到底，直接{ACT_INDIRECT}冲向悬崖，全车人陪葬。",
+    "大家都知道那个开倒车的司机是谁，除了{PER_NICK}也没别人了。",
+    "看着{PER_NICK}每天忙着{ACT_INDIRECT}，我就知道离终点不远了。",
+    # 针对 "维尼/包子 + 连任/登基" 的讽刺
+    "恭喜{PER_NICK}成功{ACT_INDIRECT}，距离大清复辟只差一步。",
+    "以前是摸着石头过河，现在是{PER_NICK}扛着麦子{ACT_INDIRECT}。",
+    "只要{PER_NICK}坚持{ACT_INDIRECT}不动摇，好日子还在后头呢。",
+    "关于那位{PER_NICK}的最新指示，除了{ACT_INDIRECT}，我想不出别的词。"
 ]
 
 # 风格 C: 听床/揭秘/谣言 (Rumor & Insider)
@@ -173,6 +206,46 @@ tmpl_protest = [
     "看见一群人在{LOC_SENSITIVE}{ACT_PROTEST}，警察都来了，场面很混乱。",
     "只有通过{ACT_PROTEST}，才能让{ORG_PARTY}听到我们的声音。",
     "为了纪念{EVT_EXTREME}，我们决定去{LOC_SENSITIVE}进行{ACT_PROTEST}。"
+]
+
+# ==============================================================================
+# 针对性特训模板 (Targeted Hard Cases)
+# 目的：强制修复 Stress Test 中发现的漏判 (False Negatives)
+# ==============================================================================
+
+# 1. 颠覆政权特训 (Subversion)
+# 解决痛点：模型认为“推翻+统治”是中性历史描述。
+# 策略：强制绑定 "推翻/结束/毁灭" + "中共/党/政权"，并强化当前时态。
+tmpl_subversion = [
+    "我们的终极目标就是{ACT_DIRECT}{ORG_PARTY}的极权统治。",
+    "觉醒的人民终将{ACT_DIRECT}{ORG_PARTY}，迎来新中国。",
+    "必须彻底{ACT_DIRECT}{ORG_PARTY}，否则国家没有未来。",
+    "号召全国人民联合起来，{ACT_DIRECT}这个非法的{ORG_PARTY}。",
+    "只要{ORG_PARTY}一天不{ACT_DIRECT}，抗争就一天不会停止。",
+    "唯一的出路就是{ACT_DIRECT}{ORG_PARTY}，建立宪政民主。",
+    # 针对 "推翻+政党" 的强绑定
+    "我们要联合起来，{ACT_DIRECT}{ORG_PARTY}的腐朽统治，建立宪政民主。",
+    "中国人民的唯一出路，就是彻底{ACT_DIRECT}{ORG_PARTY}这个非法政权。",
+    "绝不能让{ORG_PARTY}继续祸害子孙后代，必须将其{ACT_DIRECT}。",
+    "只要{ORG_PARTY}一天不倒台，我们就要抗争到底，直到{ACT_DIRECT}它。",
+    # 针对 "李强/习近平 + 废物/傀儡" 等具体辱骂 (解决 "李强就是个傀儡" 识别度低的问题)
+    "{PER_REAL}就是一个无能的{TERM_METAPHOR}，根本不配领导这个国家。",
+    "{PER_REAL}不仅是{ORG_PARTY}的傀儡，更是中华民族的罪人。",
+    "强烈呼吁罢免{PER_REAL}，他没有能力治理国家，只会搞政治斗争。",
+    "{PER_REAL}下台！{PER_REAL}滚蛋！还我河山！"
+]
+
+# 2. 高级隐喻特训 (Metaphor/Accelerator)
+# 解决痛点：模型认为“加速师/司机/开倒车”是交通描述。
+# 策略：强制绑定 "维尼/加速师" + "开倒车/踩油门/坠崖"。
+tmpl_metaphor_hard = [
+    "总加速师正在疯狂{ACT_INDIRECT}，这辆车迟早要坠崖。",
+    "那个开倒车的司机就是{PER_NICK}，大家抓紧跳车。",
+    "眼看他{ACT_INDIRECT}，眼看他把国家带进沟里。",
+    "在那位{PER_NICK}的亲自指挥下，油门焊死，一路{ACT_INDIRECT}。",
+    "这就叫{ACT_INDIRECT}，{PER_NICK}不仅不减速，还把方向盘扔了。",
+    "全网都在禁评那位司机，因为他开的方向是{ACT_INDIRECT}。",
+    "修宪只是为了方便他继续{ACT_INDIRECT}，拉着十几亿人陪葬。"
 ]
 
 # ==============================================================================

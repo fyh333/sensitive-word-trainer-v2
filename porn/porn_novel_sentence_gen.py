@@ -4,7 +4,7 @@ import re
 
 # =================配置区域=================
 # 生成样本数量
-TOTAL_LINES = 2000
+TOTAL_LINES = 3000
 # 输出文件路径
 OUTPUT_FILE = "porn/porn_novel_sentence.jsonl"
 # 类别标签 (2 代表色情)

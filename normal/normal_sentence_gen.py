@@ -2,7 +2,7 @@ import random
 import json
 
 # 配置
-TOTAL_LINES = 15000 # 稍微增加数量，因为现在的样本多样性很高
+TOTAL_LINES = 18000 # 稍微增加数量，因为现在的样本多样性很高
 OUTPUT_FILE = "normal/normal_sentence_enhanced.jsonl"
 
 # ==========================================
@@ -525,6 +525,46 @@ def gen_complex_normal():
     }
     return fill_template(templates, fillers)
 
+
+def gen_slogan_vaccine():
+    templates = [
+        "我们要{action}，实现{goal}。",
+        "坚决{action}{evil}，维护社会稳定。",
+        "网络不是法外之地，请{adj}。",
+        "不管是白猫黑猫，捉住老鼠就是好猫。", # 特例加入
+        "{slogan}，{slogan}。",
+        "深入贯彻{meeting}精神，坚持{policy}。"
+    ]
+    fillers = {
+        "action": ["打击", "扫除", "严惩", "贯彻", "落实", "坚持"],
+        "evil": ["黑恶势力", "违法犯罪", "歪风邪气", "腐败分子"],
+        "goal": ["中华民族伟大复兴", "共同富裕", "现代化", "高质量发展"],
+        "adj": ["谨言慎行", "遵纪守法", "文明上网", "理性发言"],
+        "slogan": ["富强民主", "文明和谐", "爱国敬业", "诚信友善", "不信谣", "不传谣"],
+        "meeting": ["两会", "二十大", "三中全会"],
+        "policy": ["动态清零", "改革开放", "一国两制"]
+    }
+    return fill_template(templates, fillers)
+
+def gen_emotion_exaggeration():
+    templates = [
+        "这笑话真是{verb}我了，哈哈哈哈。",
+        "今天的作业多得要{verb}人了。",
+        "这把游戏我拿了{game_act}，简直爽翻了。",
+        "这个{noun}真好吃，好吃到爆。",
+        "如果不{act}，人是会{state}的，这是常识。",
+        "我的电脑{state}了，气得我想{act_violent}。"
+    ]
+    fillers = {
+        "verb": ["笑死", "气死", "累死", "急死", "吓死"],
+        "game_act": ["五杀", "超神", "炸弹", "双杀"], # 斗地主/王者荣耀词汇
+        "noun": ["蛋糕", "火锅", "烧烤"],
+        "act": ["吃饭", "喝水", "睡觉", "呼吸"],
+        "state": ["饿死", "渴死", "困死", "死机", "蓝屏"],
+        "act_violent": ["砸了它", "摔键盘", "骂人"]
+    }
+    return fill_template(templates, fillers)
+
 def gen_short_structure_vaccine():
     """
     结构疫苗：专门生成 '短句，短句。' 格式的正常文本。
@@ -586,8 +626,8 @@ def gen_mixed_long_text():
         gen_medical_trap, gen_agri_trap, gen_funeral_trap, gen_action_trap,
         gen_family_love, gen_tech_trap, gen_movement_trap, gen_service_trap,
         gen_political_news_vaccine, gen_keyword_ambiguity, 
-        gen_body_art_life, gen_verb_ambiguity,
-        gen_porn_adversarial, gen_short_structure_vaccine
+        gen_body_art_life, gen_verb_ambiguity, gen_slogan_vaccine,
+        gen_porn_adversarial, gen_short_structure_vaccine, gen_emotion_exaggeration
     ]
     
     for _ in range(num_parts):
@@ -689,7 +729,8 @@ with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
                 gen_normal_text, gen_gong_trap, gen_xi_trap, gen_political_news_vaccine,
                 gen_porn_adversarial, gen_complex_normal, gen_name_trap, 
                 gen_medical_trap, gen_agri_trap, gen_funeral_trap, 
-                gen_body_art_life, gen_verb_ambiguity, gen_short_structure_vaccine
+                gen_body_art_life, gen_verb_ambiguity, gen_short_structure_vaccine,
+                gen_slogan_vaccine, gen_emotion_exaggeration
             ]
             raw_text = random.choice(gens)()
 

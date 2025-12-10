@@ -8,8 +8,8 @@ class Config:
         
         # 路径配置
         self.train_files = "/home/fyh/python/sensitive-word-trainer-v2/**/*.jsonl" # 支持通配符
-        self.save_model_path = "./sensitive_bert_slidewindow_v2.pth"
-        self.save_map_path = "./ner_map.json"
+        self.save_model_path = "./sensitive_bert_slidewindow_v3.pth"
+        self.save_map_path = "./ner_map_v3.json"
         
         # 训练参数
         self.batch_size = 32
@@ -18,6 +18,6 @@ class Config:
         self.max_len = 512       # BERT 模型硬限制
         
         # 滑动窗口关键参数
-        self.slide_stride = 500  # 步幅：每次移动多少字 (重叠区域 = 512 - 400 = 112)
+        self.slide_stride = 480  # 步幅：每次移动多少字 (重叠区域 = 512 - 400 = 112)
         self.min_chunk_len = 10  # 切分后如果片段太短则丢弃
         

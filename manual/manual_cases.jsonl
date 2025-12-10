@@ -1,0 +1,122 @@
+{"text": "这是什么东西？", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O"]}
+{"text": "这是什么？", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O"]}
+{"text": "那是什么", "label_cls": 0, "label_ner": ["O", "O", "O", "O"]}
+{"text": "哪有你说的这个东西？", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "好像不太对", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O"]}
+{"text": "他的代码看起来还不错", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "不对", "label_cls": 0, "label_ner": ["O", "O"]}
+{"text": "好的", "label_cls": 0, "label_ner": ["O", "O"]}
+{"text": "今天的活动真不错！", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "今天的活动很不错！", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "上个月的菜还行", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O"]}
+{"text": "不会吧？这也行？？", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "真有你的！", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O"]}
+{"text": "坚决打击违法犯罪行为。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "深入开展扫黑除恶专项斗争。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "网络不是法外之地，请谨言慎行。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "自觉做到不信谣、不传谣、不造谣。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "富强民主文明和谐，爱国敬业诚信友善。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "不管是白猫黑猫，捉住老鼠就是好猫。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "严禁随地吐痰，违者罚款。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "请勿在公共场所大声喧哗。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "根据相关法律法规，您的账号已被封禁。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "坚持动态清零不动摇，全力保障人民生命安全。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "房子是用来住的，不是用来炒的。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "绿水青山就是金山银山。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "我们要以此为契机，深化改革开放。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "必须坚持党的领导，坚持人民至上。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "所有人员请佩戴好口罩，保持一米距离。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "严厉查处偷税漏税行为。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "增强四个意识，坚定四个自信，做到两个维护。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "禁止携带易燃易爆物品进入车站。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "依法治国，建设社会主义法治国家。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "今天的新闻联播主要内容如下。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "请大家排队进行核酸检测。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "为了您的安全，请系好安全带。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "打击网络谣言，共建清朗空间。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "该行为违反了社区公约。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "请立即停止您的不当行为。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "笑死我了，这图太逗了。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "饿死我了，中午吃什么？", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "困死爹了，昨晚加班到三点。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "我的电脑突然炸了，文件全没了。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "这把游戏我拿了五杀，队友太给力了。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "斗地主：我出炸弹，四个二！", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "如果不吃饭，人是真的会饿死的。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "这天气热得我想死。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "气死我了，排队排了半小时。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "我也太笨了，出门竟然忘带钥匙。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "这个Bug真是变态，怎么改都报错。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "我恨死香菜了，味道像肥皂。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "这游戏太难了，我被虐哭了。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "吓死宝宝了，刚才那声雷真响。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "你这个小坏蛋，又偷吃零食。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "这也太杀马特了，欣赏不来。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "我把这只蚊子拍死了。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "消毒水可以杀灭99%的细菌。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "今天累得像条狗一样。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "这道菜辣得变态，但是我喜欢。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "虽然他长得丑，但是很温柔。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "这系统卡得我想砸键盘。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "真是个憨憨，这也信。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "我要把这堆垃圾扔掉。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "你脑洞真大，不去写小说可惜了。", "label_cls": 0, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "总加速师正在踩油门。", "label_cls": 1, "label_ner": ["O", "B-SENS", "I-SENS", "I-SENS", "O", "O", "O", "O", "O", "O"]}
+{"text": "倒车请注意，倒车请注意。", "label_cls": 1, "label_ner": ["B-SENS", "I-SENS", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "那位司机要把车开到悬崖里去了。", "label_cls": 1, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "维尼遨游星汉，我们要完蛋。", "label_cls": 1, "label_ner": ["B-SENS", "I-SENS", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "庆丰帝登基，万岁万万岁。", "label_cls": 1, "label_ner": ["B-SENS", "I-SENS", "I-SENS", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "包子露宪了。", "label_cls": 1, "label_ner": ["B-SENS", "I-SENS", "O", "O", "O", "O"]}
+{"text": "细颈瓶怎么还不下台？", "label_cls": 1, "label_ner": ["B-SENS", "I-SENS", "I-SENS", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "李强就是个傀儡。", "label_cls": 1, "label_ner": ["B-SENS", "I-SENS", "O", "O", "O", "O", "O", "O"]}
+{"text": "打倒独裁者。", "label_cls": 1, "label_ner": ["O", "O", "B-SENS", "I-SENS", "I-SENS", "O"]}
+{"text": "共匪不灭，天理难容。", "label_cls": 1, "label_ner": ["B-SENS", "I-SENS", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "我们要推翻共产党的统治。", "label_cls": 1, "label_ner": ["O", "O", "O", "O", "O", "B-SENS", "I-SENS", "I-SENS", "O", "O", "O", "O"]}
+{"text": "中共必须谢罪。", "label_cls": 1, "label_ner": ["B-SENS", "I-SENS", "O", "O", "O", "O", "O"]}
+{"text": "天灭中共，三退保平安。", "label_cls": 1, "label_ner": ["O", "O", "B-SENS", "I-SENS", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "支持香港独立，光复香港。", "label_cls": 1, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "台湾是一个独立的国家。", "label_cls": 1, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "新疆集中营是真的。", "label_cls": 1, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "大纪元新闻：江泽民被捕。", "label_cls": 1, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "六四屠城，血债血偿。", "label_cls": 1, "label_ner": ["B-SENS", "I-SENS", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "8964，永不敢忘。", "label_cls": 1, "label_ner": ["B-SENS", "I-SENS", "I-SENS", "I-SENS", "O", "O", "O", "O", "O", "O"]}
+{"text": "这就是赵家人的嘴脸。", "label_cls": 1, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "韭菜就要有韭菜的觉悟。", "label_cls": 1, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "最后一代，谢谢。", "label_cls": 1, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "通商宽衣，萨格尔王。", "label_cls": 1, "label_ner": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "扛麦郎不换肩。", "label_cls": 1, "label_ner": ["O", "O", "O", "O", "O", "O", "O"]}
+{"text": "XJP step down.", "label_cls": 1, "label_ner": ["B-SENS", "I-SENS", "I-SENS", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "CCP virus.", "label_cls": 1, "label_ner": ["B-SENS", "I-SENS", "I-SENS", "O", "O", "O", "O", "O", "O", "O"]}
+{"text": "习近平去死。", "label_cls": 1, "label_ner": ["B-SENS", "I-SENS", "I-SENS", "O", "B-INS", "O"]}
+{"text": "李强滚蛋。", "label_cls": 1, "label_ner": ["B-SENS", "I-SENS", "B-INS", "O", "O"]}
+{"text": "共产党下台。", "label_cls": 1, "label_ner": ["B-SENS", "I-SENS", "I-SENS", "O", "O", "O"]}
+{"text": "独夫民贼习近平。", "label_cls": 1, "label_ner": ["O", "O", "O", "O", "B-SENS", "I-SENS", "I-SENS", "O"]}
+{"text": "约炮。", "label_cls": 2, "label_ner": ["B-PRN", "I-PRN", "O"]}
+{"text": "上门服务。", "label_cls": 2, "label_ner": ["B-PRN", "I-PRN", "O", "O", "O"]}
+{"text": "同城可约。", "label_cls": 2, "label_ner": ["O", "O", "O", "O", "O"]}
+{"text": "丝袜足交。", "label_cls": 2, "label_ner": ["O", "O", "O", "O", "O"]}
+{"text": "幼女资源。", "label_cls": 2, "label_ner": ["B-PRN", "I-PRN", "O", "O", "O"]}
+{"text": "母狗调教。", "label_cls": 2, "label_ner": ["O", "O", "B-PRN", "I-PRN", "O"]}
+{"text": "想被操。", "label_cls": 2, "label_ner": ["O", "O", "B-PRN", "O"]}
+{"text": "看看批。", "label_cls": 2, "label_ner": ["O", "O", "B-PRN", "O"]}
+{"text": "喝茶，懂的来。", "label_cls": 2, "label_ner": ["O", "O", "O", "O", "O", "O", "O"]}
+{"text": "外围空降。", "label_cls": 2, "label_ner": ["O", "O", "O", "O", "O"]}
+{"text": "裸聊+V。", "label_cls": 2, "label_ner": ["B-PRN", "I-PRN", "O", "O", "O"]}
+{"text": "SM捆绑。", "label_cls": 2, "label_ner": ["O", "O", "O", "O", "O"]}
+{"text": "出售原味内裤。", "label_cls": 2, "label_ner": ["O", "O", "O", "O", "O", "O", "O"]}
+{"text": "NMSL", "label_cls": 3, "label_ner": ["B-INS", "I-INS", "I-INS", "I-INS"]}
+{"text": "WSND", "label_cls": 3, "label_ner": ["O", "O", "O", "O"]}
+{"text": "傻逼", "label_cls": 3, "label_ner": ["B-INS", "I-INS"]}
+{"text": "废物", "label_cls": 3, "label_ner": ["O", "O"]}
+{"text": "你妈死了", "label_cls": 3, "label_ner": ["O", "O", "B-INS", "O"]}
+{"text": "全家暴毙", "label_cls": 3, "label_ner": ["O", "O", "O", "O"]}
+{"text": "滚去死", "label_cls": 3, "label_ner": ["B-INS", "O", "B-INS"]}
+{"text": "脑残东西", "label_cls": 3, "label_ner": ["B-INS", "I-INS", "O", "O"]}
+{"text": "贱人", "label_cls": 3, "label_ner": ["B-INS", "I-INS"]}
+{"text": "操你妈", "label_cls": 3, "label_ner": ["B-PRN", "O", "O"]}
+{"text": "我要杀了你", "label_cls": 3, "label_ner": ["O", "O", "B-INS", "O", "O"]}
+{"text": "教你做炸弹", "label_cls": 3, "label_ner": ["O", "O", "O", "O", "O"]}
+{"text": "出售迷药", "label_cls": 3, "label_ner": ["O", "O", "O", "O"]}
+{"text": "把你全家杀光", "label_cls": 3, "label_ner": ["O", "O", "O", "O", "B-INS", "O"]}
+{"text": "去死吧", "label_cls": 3, "label_ner": ["O", "B-INS", "O"]}
+{"text": "狗东西", "label_cls": 3, "label_ner": ["O", "O", "O"]}
